@@ -1,57 +1,8 @@
-# Netflix-GPT
+import { useState } from "react";
+import Header from "./Header";
 
--- Install tailwind for the design
-
-## Planning:
-Login & SignUp <br>
-  - Sign In / Sign Up form
-  - redirect to Browse page
-  - Browse (after authentication)
-      - Header
-      - Main Movie
-          - Tailer in Background
-          - Title & Description
-          - Movie Suggestion
-              - MovieLists
-
-    - Netflix GPT
-      - Search Bar
-      - Movie Suggestion
-      - Movie API for suggestion
-     
-
-    # React-Router-DOM:
-    
-    npm i -D react-router-dom
-
-```
-    import { createBrowserRouter, RouterProvider } from "react-router-dom";
-const Body = () => {
-  const appRouter = createBrowserRouter([
-    {
-      path: "/",
-      element: <Login />,
-    },
-    {
-      path: "/browse",
-      element: <Browse />,
-    },
-  ]);
-
-  return (
-    <div>
-        <RouterProvider router={appRouter}/>
-    </div>
-  );
-};
-
-export default Body;
-```
-
-
-# Conditional Rendering for the Sign In and Sign Up Form:
-```
-const [isSignInForm, setIsSignInForm] = useState(true);
+const Login = () => {
+  const [isSignInForm, setIsSignInForm] = useState(true);
 
   const toggleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
@@ -97,6 +48,6 @@ const [isSignInForm, setIsSignInForm] = useState(true);
       </form>
     </div>
   );
+};
 
-```
-
+export default Login;
