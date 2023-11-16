@@ -17,3 +17,4 @@ Login & SignUp <br>
     - Netflix GPT
       - Search Bar
       - Movie Suggestion
+      - Movie API for suggestion 
