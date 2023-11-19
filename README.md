@@ -136,3 +136,9 @@ firebase login
 firebase init
 firebase deploy
 
+
+
+making use fo useRef hook to get the value and transfering that value of SignIn form for validation:<br>
+also that value we get from useRef from signUp page we send to firebase Auth API for authentication if that value is signedup or not<br>
+storing value in the firebase storage<br>
+as soon as firebase auth api authenticate, immidiately store that value in the redux store so we can make use of it later
